@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.cw-section-block-inner {
+    box-shadow: 0 0 0 1px #ccc inset;
+    padding: 15px!important;
+}
+
+.wp-admin {
+    .fullw-sect {
+    .cw-section-block-content {
+            .cw-section-block-inner {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.cw-grad-prev {
+    width: 100%;
+    height: 100px;
+}

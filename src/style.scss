@@ -1,0 +1,131 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-cw-blocks-section {
+    position: relative;
+}
+
+.cw-section-block-mother {
+    &.fullw {
+        .cw-section-block-bg {
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;
+        }
+    }
+
+    .cw-section-block-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 3;
+
+            &.top-left {
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+            }
+
+            &.top-center {
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            &.top-right {
+                top: 0;
+                left: auto;
+                right: 0;
+                transform: translate(0, 0);
+            }
+
+            &.center-left {
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+
+            &.center-center {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.center-right {
+                top: 50%;
+                left: auto;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+
+            &.bottom-left {
+                top: auto;
+                bottom: 0;
+                left: 0;
+                transform: translate(0, 0);
+            }
+
+            &.bottom-center {
+                top: auto;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            &.bottom-right {
+                top: auto;
+                bottom: 0;
+                left: auto;
+                right: 0;
+            }
+
+        }
+    
+        .cw-section-block-bg-img,
+        .cw-section-block-bg-color {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .cw-section-block-bg-img {
+            z-index: 2;
+        }
+    
+        .cw-section-block-bg-color {
+            z-index: 1;
+        }
+    }
+    
+    .cw-section-block-content {
+        position: relative;
+        z-index: 2;
+    
+        .wp-block-columns {
+            margin-bottom: 0;
+        }
+    }
+}

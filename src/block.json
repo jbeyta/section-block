@@ -1,0 +1,111 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/cw-section",
+	"version": "0.1.0",
+	"title": "Section",
+	"category": "widgets",
+	"icon": "layout",
+	"description": "Sections! Backgrounds! Colors! Images!",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "cw-section",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+    "attributes": {
+        "paddingTop": {
+            "type": "number",
+            "default": 0
+		},
+        "paddingRight": {
+            "type": "number",
+            "default": 0
+		},
+        "paddingBottom": {
+            "type": "number",
+            "default": 0
+		},
+        "paddingLeft": {
+            "type": "number",
+            "default": 0
+		},
+        "width": {
+            "type": "number",
+            "default": 1400
+		},
+        "fullWidth": {
+            "type": "boolean",
+            "default": true
+		},
+        "height": {
+            "type": "number",
+            "default": 0
+		},
+        "imgData": {
+            "type": "object",
+            "default": {}
+		},
+        "videoData": {
+            "type": "object",
+            "default": {}
+		},
+        "backgroundPosition": {
+            "type": "string",
+            "default": "center center"
+		},
+        "backgroundSize": {
+            "type": "string",
+            "default": "cover"
+		},
+        "backgroundSizeCustom": {
+            "type": "number",
+            "default": 100
+		},
+        "backgroundAttachment": {
+            "type": "string",
+            "default": "normal"
+		},
+        "backgroundRepeat": {
+            "type": "string",
+            "default": "no-repeat"
+		},
+        "fullwidthBg": {
+            "type": "boolean",
+            "default": false
+		},
+        "opacity": {
+            "type": "number",
+            "default": 100
+		},
+        "backgroundColor": {
+            "type": "string",
+            "default": ""
+		},
+        "backgroundColor2": {
+            "type": "string",
+            "default": ""
+		},
+        "gradAngle": {
+            "type": "number",
+            "default": 0
+		},
+        "borderWidth": {
+            "type": "number",
+            "default": 0
+		},
+        "borderRadius": {
+            "type": "number",
+            "default": 0
+		},
+        "borderColor": {
+            "type": "string",
+            "default": ""
+		},
+        "borderStyle": {
+            "type": "string",
+            "default": "solid"
+		}
+	}
+}
